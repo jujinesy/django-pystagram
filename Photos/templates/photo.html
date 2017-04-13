@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<p>hello world</p>
+
+<!-- {% for p in Photo %}
+<p>{{p.id}}</p>
+{% endfor %} -->
+
+
+<p>{{photo.image_file.url}}</p>
+
+<p><img src="{{photo.image_file.url}}" /></p>
+{% endblock %}
